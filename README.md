@@ -5,7 +5,7 @@ Hamlet – secure webmail client for EasyCrypt email privacy service
 
 INTRODUCTION
 ------------
-Hamlet is a secure webmail client for desktop browsers that is used with EasyCrypt email privacy service. It performs end-to-end PGP encryption and supports EasyCrypt’s Zero Knowledge operation – email content (body and attachments) and the user's private key never leave the user’s computer.
+Hamlet is a secure webmail client for desktop browsers that is used with EasyCrypt email privacy service. It performs end-to-end PGP encryption and supports zero knowledge operation of EasyCrypt – email content (body and attachments) and the user's private key are always encrypted, and the password is always hashed, before leaving the user’s computer.
 Hamlet is fully compliant with OpenPGP and PGP/MIME. Future versions are planned to support anonymity and metadata protection.
 Hamlet is based on and incorporates code from RoundCube and uses EasyCrypt Service Plugin and EasyCrypt Adaptation Plugin for RoundCube.
 All the repos on which Hamlet depends are cloned here to support building Hamlet from this repo alone. 
@@ -14,9 +14,8 @@ Supported browsers (tested): Chrome, Firefox, Opera, Safari in non-private mode 
 Other desktop browsers will probably work but have not been not tested yet. 
 Chrome on Android tablets and iPpad works fine in desktop mode except some minor visual issues in portrait orientation.
 
-Hamlet includes other open source classes/libraries from [TinyMCE][tinymce] rich
-text editor, [Firebase][php-jwt] JWT implementation for PHP, [Guzzle][guzzle] PHP HTTP client,
-[PHP FIG][http-message].
+Hamlet includes other open source classes/libraries from [TinyMCE](https://www.tinymce.com/) rich
+text editor, [Firebase](https://github.com/firebase/php-jwt) JWT implementation for PHP, [Guzzle](http://docs.guzzlephp.org/en/stable/) PHP HTTP client,[PHP FIG http-message](https://github.com/php-fig/http-message)
 
 INSTALLATION
 ------------
@@ -37,7 +36,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program. If not, see [www.gnu.org/licenses/][gpl].
+along with this program. If not, see [www.gnu.org/licenses/](www.gnu.org/licenses/).
 
 This file forms part of the RoundRube Webmail Software for which the
 following exception is added: Plugins and Skins which merely make
@@ -53,4 +52,4 @@ original version of the license.
 CONTACT
 -------
 For bug reports or feature requests please refer to the tracking system
-at [Github][githubissues] or email us at support(at)easycrypt(dot)co
+at [Github](https://github.com/EasyCrypt-co/hamlet/issues) or email us at support(at)easycrypt(dot)co
