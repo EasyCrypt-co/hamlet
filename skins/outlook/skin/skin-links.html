@@ -1,0 +1,13 @@
+<roundcube:if condition="empty(env:rcs_device) || env:rcs_device == 'desktop'" />
+    <link rel="stylesheet" type="text/css" href="/common/st_buttons_desktop.css" />
+    <link rel="stylesheet" type="text/css" href="/common/st_menus_desktop.css" />
+    <link rel="stylesheet" type="text/css" href="/common/ic_fa_desktop.css" />
+    <link rel="stylesheet" type="text/css" href="/common/remove_list_icons.css" />
+    <link rel="stylesheet" type="text/css" href="/skin/skin_desktop.css" />
+    <link rel="stylesheet" type="text/css" href="/ec_custom.css" />
+<roundcube:else />
+    <link rel="stylesheet" type="text/css" href="/common/st_mobile.css" />
+    <link rel="stylesheet" type="text/css" href="/common/ic_fa_mobile.css" />
+    <link rel="stylesheet" type="text/css" href="/skin/skin_mobile.css" />
+    <link rel="stylesheet" type="text/css" href="/ec_custom_mobile.css" />
+<roundcube:endif />

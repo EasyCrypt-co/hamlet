@@ -1,0 +1,105 @@
+/* http://fortawesome.github.io/Font-Awesome */
+
+@font-face {
+    font-family: 'IconFont';
+    src: url('./icons_fa/fontawesome-webfont.eot?v=4.1.0');
+    src: url('./icons_fa/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), 
+        url('./icons_fa/fontawesome-webfont.woff?v=4.1.0') format('woff'), 
+        url('./icons_fa/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), 
+        url('./icons_fa/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main-menu #button-taskbar span:before { content: "\f0c9"; } /* bars */
+#main-menu #button-mail-back span:before { content: "\f0a8"; } /* arrow-circle-left */
+#main-menu #button-compose-settings span:before { content: "\f205"; } /* toggle-on */
+#main-menu #button-send span:before { content: "\f1d8"; } /* send */
+#main-menu #button-reply span:before { content: "\f112"; } /* reply */
+#main-menu #button-toolbar span:before { content: "\f013"; } /* gear */
+#main-menu #button-format span:before { content: "\f121"; } /* code */
+#main-menu #button-compose span:before { content: "\f040"; } /* pencil */
+#main-menu #button-users span:before { content: "\f007"; } /* user */
+#main-menu #button-folders span:before { content: "\f07c"; } /* folder-open */
+#main-menu #button-mail span:before { content: "\f0e0"; } /* envelope */
+#main-menu #button-funnel span:before { content: "\f002"; } /* search */
+#main-menu #button-sections span:before { content: "\f073"; } /* calendar */
+#main-menu #button-calendar span:before { content: "\f0ae"; } /* tasks */
+#main-menu #button-tasks span:before { content: "\f0ae"; } /* tasks */
+.popup-close a:before  { content: "\f137"; } /* chevron-circle-left */
+
+#mailboxlist li div.collapsed:before,
+#directorylist li.addressbook div.collapsed:before,
+div.collapsed:before { content: "\f0da"; } /* caret-right */
+
+#mailboxlist li div.expanded:before,
+#directorylist li.addressbook div.expanded:before,
+div.expanded:before { content: "\f0d7"; } /* caret-down */
+
+#messagelist td.subject:before { content: "\f00c"; } /* check */
+#messagelist td.flag span.flagged:before { content: "\f024"; } /* flag */
+#messagelist td.status span.unread:before { content: "\f069"; } /* asterisk */
+#messagelist td.attachment span.attachment:before { content: "\f0c6"; } /* paperclip */
+#messagelist td.attachment span.report:before { content: "\f15c"; } /* file-text */
+#messagelist td.subject span.msgicon.replied:before { content: "\f112"; } /* reply */
+#messagelist td.subject span.msgicon.forwarded:before { content: "\f064"; } /* forward */
+#messagelist td.subject span.msgicon.replied.forwarded:before { content: "\f07e"; } /* arrows-h */
+.moreheaderstoggle.remove .iconlink:before { content: "\f077"; } /* chevron-up */
+.moreheaderstoggle .iconlink:before { content: "\f078"; } /* chevron-down */
+#planner_controls #new:after { content: "\f067"; }
+#planner_controls #tomorrow:after { content: "\f054"; }
+#planner_controls #all:after { content: "\f141"; }
+#planner_controls #help:after { content: "\f05a"; }
+#planner_controls #filter:after { content: "\f0b0"; }
+#full-headers .more-headers.show-headers:before { content: "\f13a"; }
+#full-headers .more-headers.hide-headers:before { content: "\f13a"; }
+#attachment-list .delete:before { content: "\f00d"; }
+#attachment-list .drop:before { content: "\f13a"; }
+.rcmaddcontact:before { content: "\f007"; }
+.settings-button:nth-child(3) span:before  {   content: "\f0ad"; }
+.settings-button:nth-child(4) span:before  {   content: "\f00a"; }
+#messagestack div:after { content: "\f06a"; }
+#messagestack div.error:after { content: "\f00d"; }
+#messagestack div.warning:after { content: "\f071"; }
+#messagestack div.confirmation:after { content: "\f00c"; }
+#messagestack div.loading:after { content: ""; }
+a.firstpage:before { content: "\f100"; }
+a.prevpage:before { content: "\f104"; }
+a.nextpage:before { content: "\f105"; }
+a.lastpage:before { content: "\f101"; }
+#messageheader .pagenav a.prevpage:before { content: "\f062"; }
+#messageheader .pagenav a.nextpage:before { content: "\f063"; }
+#login-menu-button:before { content: "\f0c9"; } /* bars */
+
+#groupoptionslink span.inner:before  { content: "\f013"; } /* gear */
+a.listbutton.add span.inner:before { content: "\f067"; } /* plus */
+a.listbutton.delete span.inner:before { content: "\f068"; } /* minus */
+a.listbutton.removegroup span.inner:before { content: "\f127"; } /* unlink */
+
+/* gestures */
+.message-action-links a.mal-flag:before { content: "\f11d"; }
+.message-action-links a.mal-unflag:before { content: "\f024"; }
+.message-action-links a.mal-more:before { content: "\f0c9"; }
+.message-action-links a.mal-delete:before { content: "\f00d"; }
+#mainscreen.refresh:before { content: "\f021"; }
+#mainscreen.progress:before { content: "\f021"; }
+#mailview-right.gesture-pan.prev:before  {   content: "\f060"; }
+#mailview-right.gesture-pan.next:before  {   content: "\f061"; }
+#mailview-right.gesture-pan.disabled:before  { content: "\f05e"; }
+
+/* plugins */
+#calendartoolbar .addevent:before { content: "\f055"; }
+#calendartoolbar .print:before { content: "\f02f"; }
+#calendartoolbar .refresh:before { content: "\f021"; }
+#calendartoolbar .import:before { content: "\f149"; }
+#calendartoolbar .export:before { content: "\f148"; }
+#taskstoolbar .button.newtask:before { content: "\f055"; }
+#taskstoolbar .print:before { content: "\f02f"; }
+#taskstoolbar .button.refresh:before { content: "\f021"; }
+#helptoolbar a.button.help:before  { content: "\f1cd"; }
+#helptoolbar a.button.about:before  { content: "\f059"; }
+#helptoolbar a.button.license:before  { content: "\f00b"; }
+#calendar .fc-button-agendaDay:before { content: "\f0db"; }
+#calendar .fc-button-agendaWeek:before { content: "\f009"; }
+#calendar .fc-button-month:before { content: "\f00a"; }
+#calendar .fc-button-table:before { content: "\f00b"; }

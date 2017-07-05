@@ -1,0 +1,251 @@
+4.7.7 (2015-12-11)
+==================
+- fixed text and link colors
+- fixed managesieve settings page layout
+
+4.7.6 (2015-11-06)
+==================
+- fixed settings buttons vertical centering
+- made mobile skins backward compatible with RC 1.0.6 (note: RC 1.0.x is still not supported, and there are no
+  gestures on the mobile devices, but at least it doesn't throw errors)
+
+4.7.5 (2015-10-28)
+==================
+- fixed select elements on iPhones (mobile skin)
+- fixed quick search element positioning (mobile skin)
+- fixed font on select elements
+- added support for markasjunk2
+- fixed address book contacts navigation icon colors
+- fixed search icon drop-down arrow
+- fixed box footer icon colors
+- fixed mobile menu mark and more enabled/disabled states
+- fixed mobile edit contact add photo button width
+
+4.7.4 (2015-08-24)
+==================
+- made the skin compatible with the new mobile class format
+- made the skin compatible with the threecol plugin
+- fixed the address book group options button icon on mobile devices
+- made the mobile skin compatible with the new user dialog plugin
+- fixed the persistent login label color on mobile devices
+- fixed the problem with rcs_disable_login_logo not working on mobile devices
+- fixed the problem with mobile message list action boxes flashing when scrolling
+- changed some mobile icons to be more descriptive
+- fixed group options menu on mobile devices
+- fixed folder actions menu on mobile devices
+- fixed property title placement on mobile devices
+- fixed checkbox and radio button sizes on mobile devices
+
+4.7.3 (2015-07-06)
+==================
+- fixed MyRoundcube plugins' background images on mobile devices
+- changed logo cursor to pointer on desktop devices
+- hidden the timezone display label in the calendar plugin on mobile devices
+
+4.7.2 (2015/07/01)
+==================
+- added support for the Kolab calendar plugin on mobile devices
+- fixed the MyRoundcube plugin calendar icons
+
+4.7.1 (2015/06/30)
+==================
+- fixed mobile skin problems on Firefox
+
+4.7 (2015/06/10)
+================
+- upgraded and changed the looks and functionality of the mobile menu
+- added mobile message list gesture: pull down to refresh
+- added mobile message list gesture: slide left to open message options
+- added mobile message view gesture: slide the header left/right to go to next/previous message
+- fixed and made available some mobile submenus that were inaccessible
+- fixed folder list indentation
+- fixed mobile folder subscription table expand/collapse icons
+- added the "Use mobile skin" link to the top menu of the desktop skin
+- changed order of the mobile menu items to make them more accessible
+
+4.6.4 (2015/04/28)
+==================
+- updated the login page to show the myroundcube taskbar
+- login page css fixes
+- moved some code from the skin to rcs_skins to make the system more compatible with third-party plugins
+
+4.6.3 (2015/04/15)
+==================
+- added more details to the software license agreement
+
+4.6.2 (2015/04/07)
+==================
+- added the rcs_login_branding_<skin> and rcs_frame_branding_<skin> config variables for specifying company logos
+- removed the support for the (skin) marker in the skin_logo variable
+- fixed hover star and flag icons in the message list
+- fixed spellcheck dropdown button
+- fixed spellcheck button highlight when active
+- fixed spellcheck list checkbox icon
+
+4.6.1 (2015/03/17)
+==================
+- fixed additional field icons on the compose page
+
+4.6 (2015/03/10)
+================
+- added the option of disabling the mobile skin on a per-device basis
+- optimized the skin load speed
+- added new config options for removing the login logo and disabling the color changing option
+- fixed the problem with the address autocomplete coloring on the compose page
+- fixed a number of small css issues
+- applied color settings to iframe contents
+
+4.5.3 (2015/02/27)
+==================
+- fixed the problem with the mobile message body section being too small if the header includes too many addresses
+
+4.5.2 (2015/02/26)
+==================
+- fixed the missing message list icons
+- fixed the missing image download toolbar icon
+
+4.5.1 (2015/02/17)
+==================
+- fixed the problem with longer messages not displaying properly on mobile devices
+- fixed the message attachment options buttons on mobile devices
+
+4.5 (2015/02/16)
+================
+- upgraded to support Roundcube 1.1.0
+- fixed settings frame sizes on mobile devices
+- added an option for disabling color selection
+
+4.4.2 (2015-01-30)
+==================
+- fixed mobile skin message scrolling problems
+
+4.4.1 (2015-01-29)
+==================
+- fixed plain text spellcheck menu colors
+
+4.4 (2015-01-28)
+================
+- upgraded to support Roundcube 1.0.5
+- upgraded to support the latest MyRoundcube plugins
+
+4.3 (2015-01-07)
+================
+- fixed the compose/attach box background
+
+4.2 (2014-10-21)
+================
+- upgraded the skin to be compatible with Roundcube 1.1 Beta
+- standardized the logo size and made it 200x50px for all skins
+- made it possible to remove references to roundcubeskins.net in config.inc.php
+- moved all images from the directory skin to skin/images
+- changed the watermark image from a roundcubeskins.net specific image to a light version of the Roundcube logo
+- added the back button to the message view toolbar (mobile)
+- added the reply button to the message view toolbar (mobile)
+- added the send button to the compose toolbar (mobile)
+- moved the links add cc, add bcc, etc. to a popup on the compose page (mobile)
+- moved the compose options box to a popup (mobile)
+- moved the edit identities button to a popup on the compose page (mobile)
+
+4.1.1 (2014-09-24)
+==================
+- fixed the login page label on Roundcube 0.9
+
+4.1 (2014-07-31)
+================
+- fixed color problems under Roundcube 0.9.x
+- changed the skin code structure to be more flexible
+- fixed identities combo display in mobile
+
+4.0 (2014-04-01)
+================
+- upgraded to be compatible with RC 1.0
+- changed the skin format to be more flexible
+- extended the skin from larry making it possible to use larry's plugin templates
+- made the skin compatible with changing the logo via the config setting
+
+3.5.2 (2013-10-25)
+==================
+- upgraded the skin to be compatible with Roundcube 0.9.5
+
+3.5.1 (2013-09-12)
+==================
+- upgraded the skin to be compatible with Roundcube 0.9.4
+
+3.5 (2013-04-22)
+================
+- upgraded the skin to be compatible with Roundcube 0.9
+
+3.4 (2012-12-10)
+================
+- fixed login logo code
+- upgraded the skin to be compatible with some third-party plugins
+
+3.3 (2012-10-17)
+================
+- upgraded the skin to be compatible with Roundcube 0.8.2
+
+3.2 (2012-10-12)
+================
+- re-created the skin based on Larry instead of Default
+
+3.1 (2012-08-10)
+================
+- made the theme compatible with Roundcube 0.8
+- fixed popup window background display on IE8
+
+3.0 (2012-04-17)
+================
+- added refresh mail button
+- added indication of which folder is selected in folder list
+- added scrolling in folder list
+- added left panel resizing to the mail list page
+- added left panel resizing to compose page
+- added left panel resizing to the address book page
+- added icons to address book groups
+- added back button to toolbar
+- added refresh button to toolbar
+- added folder expanding/collapsing functionality
+- added folder list drop target indication
+- eliminated rounded corner images and replaced them with css 3 styling
+- enabled list sort header inverted coloring
+- fixed inactive button transparency
+- fixed markasjunk plugin images
+- fixed problems with plugins adding icons to toolbar
+- fixed help screen display
+- fixed tabbed header display
+- fixed fieldset box display
+- fixed plugin content positioning
+- fixed display of error messages
+- fixed the problem with the blocked images functionality
+- changed logo and watermark
+
+2.0.3 (2011-12-30)
+==================
+- ensured compatibility with RoundCube 0.7
+- fixed the replied and forwarded message icon display
+- fixed sidebar background display
+
+2.0.2 (2011-11-11)
+==================
+- fixed the problem that didn't allow plugins to place their buttons on the settings bar
+
+2.0.1 (2011-10-31)
+==================
+- fixed some display problems on IE 7 & 8
+
+2.0 (2011-10-18)
+================
+- upgraded the theme to work under Roundcube 0.6
+  - support for advanced address search
+  - support for new address handling
+  - support for contact images
+  - support for attachment/inline forwarding options
+
+- added missing logo on settings pages
+- fixed various display problems
+- changed favicon
+
+1.1 (2011-08-26)
+================
+- fixed mail column width display
+- fixed the inline display of PDF files

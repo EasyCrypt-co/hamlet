@@ -1,0 +1,17 @@
+<roundcube:include file="/includes/links.html" skinPath="skins/larry" />
+
+<link rel="stylesheet" type="text/css" href="/common/common.css" />
+<script type="text/javascript" src="/common/common.js"></script>
+
+<roundcube:if condition="empty(env:rcs_skin_type) || env:rcs_skin_type == 'desktop'" />
+    <link rel="stylesheet" type="text/css" href="/common/desktop.css" />
+<roundcube:else />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="/common/mobile.css" />
+    <script type="text/javascript" src="/common/mobile.js"></script>
+    
+<roundcube:endif />
+
+<script type='text/javascript' src='/skin/colors.js'></script>
+
+<roundcube:include file="/skin/skin-links.html" />

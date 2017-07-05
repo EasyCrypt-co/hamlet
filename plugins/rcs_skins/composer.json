@@ -1,0 +1,13 @@
+{
+    "name": "rcskins/rcs_skins",
+    "type": "roundcube-plugin",
+    "description": "Provides extended functionality to skins from roundcubeskins.net.",
+    "license": "All rights reserved",
+    "version": "1.5",
+    "authors": [
+        {
+            "name": "RoundcubeSkins.net",
+            "email": "contact@roundcubeskins.net"
+        }
+    ]
+}

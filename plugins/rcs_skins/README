@@ -1,0 +1,43 @@
+RoundcubeSkins Skins plugin for Roundcube
+=========================================
+
+This plugin provides extended functionality to roundcubeskins.net skins. 
+
+It also fixes some third party plugins compatibility issues. Some of the third party plugins treat larry-based skins 
+as "classic", which leads to functionality and display problems. This plugin fixes the issues by substituting the
+config skin name with "larry" for the plugins in question. 
+
+INSTALLATION
+============
+
+To install the plugin, copy the folder "rcs_skins" to the "plugins" directory of your Roundcube installation and add a 
+reference to it in the config file as shown below.
+
+IMPORTANT: If you would like this plugin to fix the the third party plugin compatibility issues, make sure "rcs_skins" 
+is included at the beginning of the plugin list, before any other plugins. If you don't use any third party plugins 
+that need fixing, the order doesn't matter. 
+
+For Roundcube 1.x:
+------------------
+
+Edit the file and "config/config.inc.php" and add the reference to the plugin to the $config['plugins'] variable:
+
+$config['plugins'] = array("rcs_skins");
+
+For Roundcube 0.9.x:
+-------------------- 
+
+Edit the file "config/main.inc.php" and add the reference to the plugin to the $rcmail_config['plugins'] variable:
+
+$rcmail_config['plugins'] = array("rcs_skins");
+
+LICENSE
+=======
+
+This plugin is covered by a commercial license agreement (see the file LICENSE for details). In order to use it you 
+must purchase a license from http://roundcubeskins.net.
+
+COPYRIGHT
+=========
+
+Copyright (c) 2014-2015 Tecorama

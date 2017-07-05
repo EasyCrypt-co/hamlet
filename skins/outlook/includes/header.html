@@ -1,0 +1,122 @@
+<roundcube:include file="/includes/header.html" skinPath="skins/larry" />
+
+<roundcube:if condition="empty(env:rcs_skin_type) || env:rcs_skin_type == 'desktop'" />
+
+    <div style='display:none'>
+        <roundcube:object name="logo" src="/skin/images/logo.png" id="rcs-logo" alt="Logo" onclick="if(window.rcmail)rcmail.command('switch-task','mail')" />
+    </div>
+    
+<roundcube:else />
+
+    <script src="/common/hammer.min.js"></script>
+    <script src="/common/jquery.hammer.js"></script>
+
+    <roundcube:if condition="env:task == 'mail' && env:action == 'show'" />
+
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+            <a id='button-mail-back' href='./?_task=mail&_action=list' onclick='return rcmail.command("list", "", this,event)'><span></span></a>
+            <a id='button-toolbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "messagetoolbar")'><span></span></a>
+            <a id='button-format' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "popup-format")'><span></span></a>
+            <a id='button-reply' href='javascript:void(0)' onclick='return rcmail.command("reply", "", this,event)'><span></span></a>            
+        </div>
+        
+        <div id="popup-format" class="popup-box">
+              <h5><roundcube:label name="messageoptions" /></h5>
+              <a href='javascript:void(0)' onclick="return rcmail.command('change-format','text',this,event)"><roundcube:label name="changeformattext" /></a>
+              <a href='javascript:void(0)' onclick="return rcmail.command('change-format','html',this,event)"><roundcube:label name="changeformathtml" /></a>
+        </div>        
+
+    <roundcube:elseif condition="env:task == 'mail' && env:action == 'compose'" />
+
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+            <a id='button-send' href='#' onclick='return rcmail.command("send", "", this,event)'><span></span></a>
+            <a id='button-users' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "composeview-left")'><span></span></a>
+            <a id='button-compose-settings' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "popup-compose-settings")'><span></span></a>
+            <!-- button-toolbar added by js -->
+        </div>
+
+        
+        <div id="popup-compose-settings" class="popup-box click-close">
+              <h5><roundcube:label name="moreactions" /></h5>
+        </div>    
+
+    <roundcube:elseif condition="env:task == 'mail' && !env:action == 'plugin.summary'" />
+
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+            <a id='button-folders' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "mailview-left")'><span></span></a>
+            <a id='button-compose' href="./?_task=mail&amp;_action=compose"><span></span></a>
+            <a id='button-mail' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "messagetoolbar")'><span></span></a>
+            <a id='button-funnel' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "popup-funnel")'><span></span></a>
+        </div>
+
+        <div id="popup-funnel" class="popup-box">
+            <h5><roundcube:label name="select" /></h5>
+            <a class='funnel-filter' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "popup-filter")'>
+                <roundcube:label name="filter" />
+                <span class="fa fa-lg fa-check"></span>
+            </a>
+            <a class='funnel-search' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "quicksearchbar")'>
+                <roundcube:label name="quicksearch" />
+                <span class="fa fa-lg fa-check"></span>
+            </a>              
+        </div>
+
+        <div id="popup-filter" class="popup-box">
+              <h5><roundcube:label name="filter" /></h5>
+        </div>
+
+    <roundcube:elseif condition="env:task == 'addressbook'" />
+
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+            <a id='button-toolbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "addressbooktoolbar")'><span></span></a>
+        </div>
+
+    <roundcube:elseif condition="env:task == 'settings'" />
+
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+            <a id='button-toolbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "settings-sections")'><span></span></a>
+        </div>
+
+    <roundcube:elseif condition="env:action == 'plugin.calendar'" />
+    
+        <!-- old calendar -->
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+            <a id='button-sections' href='javascript:void(0)' onclick='rcs_mobile.showCalendarOld("sections")'><span></span></a>
+            <a id='button-calendar' class='active' href='javascript:void(0)' onclick='rcs_mobile.showCalendarOld("calendar")'><span></span></a>
+            <a id='button-tasks' href='javascript:void(0)' onclick='rcs_mobile.showCalendarOld("tasks")'><span></span></a>
+            <a id='button-toolbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "messagetoolbar")'><span></span></a>
+        </div>
+
+    <roundcube:elseif condition="env:task == 'calendar'" />
+    
+        <!-- new calendar -->
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+            <a id='button-sections' href='javascript:void(0)' onclick='rcs_mobile.showCalendar("sections")'><span></span></a>
+            <a id='button-calendar' class='active' href='javascript:void(0)' onclick='rcs_mobile.showCalendar("calendar")'><span></span></a>
+        </div>
+
+    <roundcube:elseif condition="env:task == 'tasks'" />
+    
+        <!-- new calendar -->
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+            <a id='button-sections' href='javascript:void(0)' onclick='rcs_mobile.showTasks("sections")'><span></span></a>
+            <a id='button-tasks' class='active' href='javascript:void(0)' onclick='rcs_mobile.showTasks("tasks")'><span></span></a>
+        </div>
+
+    <roundcube:else />
+    
+        <div id='main-menu'>
+            <a id='button-taskbar' href='javascript:void(0)' onclick='rcs_mobile.popup(event, "header")'><span></span></a>
+        </div>    
+        
+    <roundcube:endif />
+
+<roundcube:endif />

@@ -1,0 +1,30 @@
+.skinselection span {
+    vertical-align: top;
+    padding-bottom: 3px;
+}
+
+.skinselection span.skinname {
+    font-size: 120%;
+}
+
+.skin-list {
+    display: none;
+}
+
+.skin-list .skinselection {
+    padding: 5px;
+}
+
+.skin-list .skinselection a {
+    display: block;
+    outline: none;
+}
+
+.skin-list .skinselection.selected {
+    background: #FFEAC1;
+}
+
+.skin-list .skinselection.mobile {
+    background: #EDEDED;
+}
+

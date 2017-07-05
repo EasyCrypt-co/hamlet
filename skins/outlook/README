@@ -1,0 +1,70 @@
+Roundcube skin by Tecorama (http://roundcubeskins.net)
+======================================================
+
+This Roundcube skin works on both desktop and mobile browsers. In order to enable the automatic skin mode switching
+depending on the device being used to browse the mail and to make the skin compatible with some third party
+plugins that don't support skining, you should enable the included rcs_skins plugin.
+
+Roundcube compatibility
+-----------------------
+
+The skin is compatible with Roundcube 1.1.x. It will not work properly with earlier versions or unreleased 
+beta versions of Roundcube.
+
+Browser compatibility
+---------------------
+
+The skin is compatible with all modern browsers.
+
+Installation
+------------
+
+To install the skin follow these steps:
+
+1. Copy the directories 'skins' and 'plugins' to the directory where your Roundcube is installed.
+
+2. Enable the plugin 'rcs_skins': Edit the file 'config/config.inc.php', find the line that begins with 
+"$config['plugins']" and add the plugin to the beginning of the array, like this:
+
+$config['plugins'] = array('rcs_skins');
+
+IMPORTANT: Make sure the rcs_skins plugin is included as the VERY FIRST plugin in the array, before any other plugins. 
+The rcs_skins plugin will fix the other incompatible plugins only if it's listed at the very beginning of the array.
+
+NOTE: The following old plugins are obsolete and should be removed from your plugins array:
+
+rcs_mobile_options
+rcs_mobile_switch
+nutsmail_theme_selector
+
+The functionality of these plugins has been superceded by rcs_skins. If you have any of these plugins in your plugin 
+array, please remove them to avoid errors.
+
+3. (Optional) If you'd like to use the skin on the Roundcube login screen and as the default skin for newly created user 
+accounts, edit 'config/config.inc.php' and follow the steps applicable to your situation:
+
+a) If you will use the same skin for all device types, find the setting $config['skin'] and set it to the name of the 
+skin you want to use. If this setting doesn't exist, add it at the end of the file, like this:
+
+$config['skin'] = '<skin-name>';
+
+b) If you want to use different default skins for desktop, tablet and phone devices, add the following lines at the end 
+of the file and specify the skins you want to use:
+
+$config['desktop_skin'] = '<skin-name>';
+$config['tablet_skin'] = '<skin-name>';
+$config['phone_skin'] = '<skin-name>';
+
+These settings will only work if the the rcs_skins plugin is loaded. They will take precedence over the setting 
+specified in $config['skin'].
+
+License
+-------
+
+The skin is covered by a commercial license agreement (see the file LICENSE for details). In order to use the skin you 
+must purchase a license from Tecorama, England (http://roundcubeskins.net).
+
+Copyright and credits
+---------------------
+
+Copyright (c) 2011-2015, Tecorama, England (http://roundcubeskins.net)

@@ -1,0 +1,110 @@
+/* http://www.flaticon.com/packs/ios7-set-lined-1 */
+
+@font-face {
+    font-family: 'IconFont';
+    src: url("./icons_fi/flaticon.eot");
+    src: url("./icons_fi/flaticon.eot#iefix") format("embedded-opentype"),
+        url("./icons_fi/flaticon.woff") format("woff"),
+        url("./icons_fi/flaticon.ttf") format("truetype"),
+        url("./icons_fi/flaticon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* safari sets a larger line height for the icon font than all the other browsers and all icons appear too low - fix it */
+*:before {
+    line-height: 1em;
+}
+
+#main-menu #button-taskbar span:before { content: "\e0bb"; } /* bars */
+#main-menu #button-mail-back span:before { content: "\e015"; } /* arrow-circle-left */
+#main-menu #button-compose-settings span:before { content: "\e0f9"; } /* toggle-on */
+#main-menu #button-send span:before { content: "\e0e3"; } /* send */
+#main-menu #button-reply span:before { content: "\e02b"; } /* reply */
+#main-menu #button-toolbar span:before { content: "\e100"; } /* gear */
+#main-menu #button-format span:before { content: "\e076"; } /* code */
+#main-menu #button-compose span:before { content: "\e0ed"; } /* pencil */
+#main-menu #button-users span:before { content: "\e0ab"; } /* user */
+#main-menu #button-folders span:before { content: "\e099"; } /* folder-open */
+#main-menu #button-mail span:before { content: "\e0c2"; } /* envelope */
+#main-menu #button-funnel span:before { content: "\e09f"; } /* filter */
+#main-menu #button-sections span:before { content: "\e056"; } /* calendar48 */
+#main-menu #button-calendar span:before { content: "\e053"; } /* th */
+#main-menu #button-tasks span:before { content: "\e053"; } /* tasks */
+.popup-close a:before  { content: "\e030"; } /* arrow-left */
+/*.popup-close a:before  { content: "\e015"; } /* arrow-circle-left */
+#mailboxlist li div.collapsed:before  { content: "\e003"; } /* plus-circle */
+#directorylist li.addressbook div.collapsed:before { content: "\e003"; } /* plus-circle */
+#mailboxlist li div.expanded:before  { content: "\e11c"; } /* minus-circle */
+#directorylist li.addressbook div.expanded:before { content: "\e11c"; } /* minus-circle */
+div.expanded:before { content: "\e11c"; }
+div.collapsed:before { content: "\e003"; }
+#messagelist td.subject:before { content: "\e07c"; } /* check */
+#messagelist td.flag span.flagged:before { content: "\e094"; } /* flag */
+#messagelist td.status span.unread:before { content: "\e119"; } /* asterisk */
+#messagelist td.attachment span.attachment:before { content: "\e03d"; } /* paperclip */
+#messagelist td.attachment span.report:before { content: "\e085"; } /* file-text */
+#messagelist td.subject span.msgicon.replied:before { content: "\e02b"; } /* reply */
+#messagelist td.subject span.msgicon.forwarded:before { content: "\e02b"; } /* forward */
+#messagelist td.subject span.msgicon.replied.forwarded:before { content: "\e00e"; } /* arrows-h */
+.moreheaderstoggle.remove .iconlink:before { content: "\e017"; } /* chevron-up */
+.moreheaderstoggle .iconlink:before { content: "\e018"; } /* chevron-down */
+#planner_controls #new:after { content: "\e0ed"; }
+#planner_controls #tomorrow:after { content: "\e0d3"; }
+#planner_controls #all:after { content: "\e0ca"; }
+#planner_controls #help:after { content: "\e0a7"; }
+#planner_controls #filter:after { content: "\e09f"; }
+#full-headers .more-headers.show-headers:before { content: "\e018"; }
+#full-headers .more-headers.hide-headers:before { content: "\e017"; }
+#attachment-list .delete:before { content: "\e080"; }
+#attachment-list .drop:before { content: "\e080"; }
+.rcmaddcontact:before { content: "\e003"; }
+.settings-button:nth-child(3) span:before  {   content: "\e10c"; }
+.settings-button:nth-child(4) span:before  {   content: "\e131"; }
+#messagestack div:after { content: "\e0ae"; }
+#messagestack div.error:after { content: "\e080"; }
+#messagestack div.warning:after { content: "\e063"; }
+#messagestack div.confirmation:after { content: "\e0a7"; }
+#messagestack div.loading:after { content: ""; }
+a.firstpage:before { content: "\e0ef"; }
+a.prevpage:before { content: "\e010"; }
+a.nextpage:before { content: "\e0d3"; }
+a.lastpage:before { content: "\e0d9"; }
+#messageheader .pagenav a.prevpage:before { content: "\e010"; }
+#messageheader .pagenav a.nextpage:before { content: "\e0d3"; }
+#login-menu-button:before { content: "\e0bb"; } /* bars */
+
+#groupoptionslink span.inner:before  { content: "\e100"; } /* gear */
+a.listbutton.add span.inner:before { content: "\e003"; } /* plus */
+a.listbutton.delete span.inner:before { content: "\e080"; }
+a.listbutton.removegroup span.inner:before { content: "\e142"; } 
+
+/* gestures */
+.message-action-links a.mal-flag:before { content: "\e094"; }
+.message-action-links a.mal-unflag:before { content: "\e094"; }
+.message-action-links a.mal-more:before { content: "\e0bb"; }
+.message-action-links a.mal-delete:before { content: "\e080"; }
+#mainscreen.refresh:before { content: "\e01d"; }
+#mailview-right.gesture-pan.prev:before  {   content: "\e030"; }
+#mailview-right.gesture-pan.next:before  {   content: "\e022"; }
+#mailview-right.gesture-pan.disabled:before  { content: "\e080"; }
+
+/* plugins */
+#calendartoolbar .addevent:before { content: "\e0ed"; }
+#calendartoolbar .print:before { content: "\e0f0"; }
+#calendartoolbar .refresh:before { content: "\e01d"; }
+#calendartoolbar .import:before { content: "\e055"; }
+#calendartoolbar .export:before { content: "\e057"; }
+#taskstoolbar .button.newtask:before { content: "\e003"; }
+#taskstoolbar .print:before { content: "\e0f0"; }
+#taskstoolbar .button.refresh:before { content: "\e01d"; }
+#helptoolbar a.button.help:before  { content: "\e0f6"; }
+#helptoolbar a.button.about:before  { content: "\e0ae"; }
+#helptoolbar a.button.license:before  { content: "\e0d8"; }
+#calendar .fc-button-agendaDay:before { content: "\e0f8"; }
+#calendar .fc-button-agendaWeek:before { content: "\e131"; }
+#calendar .fc-button-month:before { content: "\e11f"; }
+#calendar .fc-button-table:before { content: "\e052"; }
