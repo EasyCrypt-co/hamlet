@@ -53,4 +53,4 @@ original version of the license.
 CONTACT
 -------
 For bug reports or feature requests please refer to the tracking system
-at [Github][githubissues] or email us at support(at)easycrypt(dot)com
+at [Github][githubissues] or email us at support(at)easycrypt(dot)co
